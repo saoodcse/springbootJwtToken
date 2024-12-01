@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: saood
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/saood_db?createDatabaseIfNotExist=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # Automatically create/update tables based on entity definitions
+    show-sql: true  # Display SQL queries in the logs
+    properties:
+      hibernate:
+        format_sql: true  # Format the SQL queries for readability
+
+  hikari:
+    maximum-pool-size: 10
+    minimum-idle: 5
+
+logging:
+  level:
+    root: INFO  # Default logging level for all packages
+    org.springframework.web: DEBUG  # Enable DEBUG level for Spring Web package
+    org.springframework.boot: INFO  # Set the level for Spring Boot components
+    org.hibernate.SQL: DEBUG  # Enable SQL query logging if you're using Hibernate
+    org.springframework.security: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+

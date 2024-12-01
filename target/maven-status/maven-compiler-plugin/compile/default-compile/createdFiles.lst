@@ -1,0 +1,12 @@
+com\saood\entities\SessionEntity.class
+com\saood\enums\ResponseType.class
+com\saood\entities\UserEntity.class
+com\saood\entities\RoleEntity.class
+com\saood\SaoodApplication.class
+com\saood\enums\ApplicationCode.class
+com\saood\exception\ApplicationException.class
+com\saood\entities\BaseEntity.class
+com\saood\entities\RegistrationEntity.class
+com\saood\exception\GlobalExceptionHandler.class
+com\saood\config\AppConfig.class
+com\saood\response\ErrorResponse.class
